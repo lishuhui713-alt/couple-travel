@@ -1,0 +1,29 @@
+{
+  "place_id": "mangshi",
+  "name": "芒市 · 2天2夜",
+  "intro": "热带气息、佛塔、市集与洗头的松弛之城。",
+  "blocks": [
+    {
+      "type": "itinerary",
+      "title": "Day 1",
+      "content": "菩提街 → 菩提寺 → 树包塔 → 大金塔 → 银塔 → 雷牙让书店 → 烧烤/洗头"
+    },
+    {
+      "type": "itinerary",
+      "title": "Day 2",
+      "content": "丙午村市集 → 宏利市场 → 百斯特美食城 → 咖啡 → 榕树王 → 新玩厂"
+    },
+    {
+      "type": "food",
+      "title": "推荐",
+      "content": "银家早点、瑞丽活螃蟹、金禾饭店、芒市烧烤。"
+    },
+    {
+      "type": "experience",
+      "title": "缅式洗头",
+      "content": "容容家洗头，性价比高，需现场排队。"
+    }
+  ],
+  "tone": "热带、松弛、生活感",
+  "source": "user_manual"
+}

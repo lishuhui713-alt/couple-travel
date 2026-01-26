@@ -1,0 +1,19 @@
+{
+  "place_id": "ningbo",
+  "name": "宁波 · Citywalk",
+  "intro": "不是日本，也不是加州，是宁波的慢生活。",
+  "blocks": [
+    {
+      "type": "experience",
+      "title": "城市气质",
+      "content": "节奏舒缓，小众咖啡多，非常适合随走随停。"
+    },
+    {
+      "type": "spot",
+      "title": "打卡点",
+      "content": "阪急、云裳谷、陶麓星巴克、东钱湖、小加州、老外滩、天主教堂、鼓楼。"
+    }
+  ],
+  "tone": "生活感、citywalk",
+  "source": "user_manual"
+}

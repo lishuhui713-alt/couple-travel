@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>夜航旅行</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 基础样式 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(circle at top center, #0a1a33 0%, #001228 100%);
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    /* 月亮 */
+    .moon {
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle, #fefcd7, #f4f1c9);
+      border-radius: 50%;
+      margin-top: 40px;
+      box-shadow: 0 0 50px rgba(255,255,255,0.4);
+    }
+
+    /* 开屏文字，不消失，悬挂在顶部 */
+    .opening-text {
+      margin-top: 30px;
+      font-size: 2.2rem;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 20px;
+      padding: 10px 20px;
+      text-align: center;
+      /* 加一点呼吸效果 */
+      animation: text-breath 3s infinite alternate;
+    }
+
+    @keyframes text-breath {
+      0% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.85; }
+    }
+
+    /* 星星按钮容器 */
+    .stars-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 15px;
+      width: 90%;
+    }
+
+    /* 星星按钮 */
+    .star-btn {
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle at 30% 30%, #fffacd, #f4f1c9);
+      clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 
+        50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+      ); /* 五角星 */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      font-weight: bold;
+      color: #0a1a33;
+      box-shadow: 0 0 10px rgba(255,255,255,0.6);
+      transition: transform 0.8s ease-in-out, box-shadow 0.8s;
+      animation: star-breath 2s infinite alternate;
+    }
+
+    @keyframes star-breath {
+      0% { transform: scale(1);}
+      50% { transform: scale(1.1);}
+      100% { transform: scale(1);}
+    }
+
+    /* JSON内容显示区 */
+    #place-content {
+      margin-top: 40px;
+      max-width: 800px;
+      color: #fff;
+      text-align: left;
+      opacity: 0;            /* 初始透明 */
+      transition: opacity 1s ease-in-out; /* 渐显效果 */
+    }
+
+    #place-content.show {
+      opacity: 1;            /* 渐显时设置类 show */
+      animation: content-breath 2s infinite alternate;
+    }
+
+    @keyframes content-breath {
+      0% { opacity: 0.85; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); }
+      100% { opacity: 0.85; transform: scale(1); }
+    }
+
+    #place-content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    #place-content .block {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    #place-content .block h3 {
+      margin: 0 0 5px 0;
+      font-size: 1.2rem;
+    }
+
+    #place-content .block p {
+      margin: 0;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="moon"></div>
+  <div class="opening-text">望舒夜前锵锵行</div>
+
+  <div class="stars-container">
+    <div class="star-btn" onclick="go('ningbo')">浙江宁波</div>
+    <div class="star-btn" onclick="go('shangri_la_dukezong')">香格里拉</div>
+    <div class="star-btn" onclick="go('mangshi')">芒市</div>
+    <div class="star-btn" onclick="go('xichang')">西昌</div>
+    <div class="star-btn" onclick="go('quanzhou')">泉州</div>
+    <div class="star-btn" onclick="go('fuzhou')">福州</div>
+    <div class="star-btn" onclick="go('huizhou')">惠州</div>
+    <div class="star-btn" onclick="go('bazhong')">巴中</div>
+    <div class="star-btn" onclick="go('russia')">俄罗斯</div>
+    <div class="star-btn" onclick="go('japan')">日本</div>
+    <div class="star-btn" onclick="go('greece')">希腊</div>
+    <div class="star-btn" onclick="go('turkey')">土耳其</div>
+    <div class="star-btn" onclick="go('italy')">意大利</div>
+  </div>
+
+  <div id="place-content"></div>
+
+  <!-- JS 脚本 -->
+  <script src="main.js"></script>
+</body>
+</html>

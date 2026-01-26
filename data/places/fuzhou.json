@@ -1,0 +1,29 @@
+{
+  "place_id": "fuzhou",
+  "name": "福州 · 有福之州",
+  "intro": "一半是千年坊巷，一半是山海浪漫。",
+  "blocks": [
+    {
+      "type": "itinerary",
+      "title": "Day 1",
+      "content": "三坊七巷 → 烟台山 → 夜赴平潭追蓝眼泪（季节限定）"
+    },
+    {
+      "type": "itinerary",
+      "title": "Day 2",
+      "content": "上下杭 → 老药洲街美食 → 市井漫步"
+    },
+    {
+      "type": "food",
+      "title": "福州必吃",
+      "content": "鱼丸、肉燕、佛跳墙、芋泥、捞化。"
+    },
+    {
+      "type": "tips",
+      "title": "出行建议",
+      "content": "住宿选东街口或三坊七巷；平潭建议租车；带薄外套防海风。"
+    }
+  ],
+  "tone": "温润、山海并存",
+  "source": "user_manual"
+}

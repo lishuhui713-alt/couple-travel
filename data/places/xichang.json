@@ -1,0 +1,29 @@
+{
+  "place_id": "xichang",
+  "name": "西昌 · 宝藏航天城",
+  "intro": "可以平替大理，却更安静、更真实。",
+  "blocks": [
+    {
+      "type": "experience",
+      "title": "城市气质",
+      "content": "有山有海（邛海），有古城，有彝族文化，生活节奏松弛。"
+    },
+    {
+      "type": "spot",
+      "title": "必去地点",
+      "content": "建昌古城、邛海骑行、泸山光福寺、小渔村。"
+    },
+    {
+      "type": "food",
+      "title": "西昌味道",
+      "content": "烧烤、小渔村随便吃、会理鸡火丝、各种米线。"
+    },
+    {
+      "type": "tips",
+      "title": "旅行提醒",
+      "content": "夏天日晒强，早晚出门；银鳞沙滩晴天慎去；滴滴很方便。"
+    }
+  ],
+  "tone": "松弛、亲子友好",
+  "source": "user_manual"
+}

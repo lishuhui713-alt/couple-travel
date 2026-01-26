@@ -1,0 +1,29 @@
+{
+  "place_id": "quanzhou",
+  "name": "泉州 · 2天1夜",
+  "intro": "一座值得反复回来的城市，宗教、骑楼、海岸与烟火气。",
+  "blocks": [
+    {
+      "type": "itinerary",
+      "title": "Day 1",
+      "content": "开元寺 → 西街 → 钟楼 → 中山街 → 关岳庙 → 蟳埔村（簪花）"
+    },
+    {
+      "type": "itinerary",
+      "title": "Day 2",
+      "content": "梧林村落 → 洛迦寺 → 黄金海岸 → 红塔湾日落"
+    },
+    {
+      "type": "food",
+      "title": "必吃清单",
+      "content": "沙茶火锅、花生乳、咸饭、面线糊、浮粿、醋肉。"
+    },
+    {
+      "type": "tips",
+      "title": "注意事项",
+      "content": "老城区不建议自驾；蟳埔村早点去；进寺庙注意着装与礼仪。"
+    }
+  ],
+  "tone": "文化厚度、城市烟火",
+  "source": "user_manual"
+}
